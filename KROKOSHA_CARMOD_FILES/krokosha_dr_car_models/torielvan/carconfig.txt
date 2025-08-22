@@ -1,0 +1,24 @@
+//Toriel Van
+
+maxspeed = 230
+reversemaxspeed = 90
+acceleration = 3
+brakestrength = 3
+steerspeed = 14
+tiretraction = 0.5
+vehiclemass = 1.18
+
+wheelbase_x=41
+wheelbase_y=49
+
+// powertrain layout: fwd = 1, rwd = 2, awd = 3
+layout = 1
+
+
+//visual
+maxleanangle = 15
+leanmultiplier = 1.7
+renderwheels = true
+wheelrimcolor1 = 8E3E58
+wheelrimcolor2 = C0ABAB
+

@@ -1,0 +1,108 @@
+Made by Krokosha666
+
+notes to not forget how to make car:
+
+
+
+example directory:
+- my_new_car/
+- - carconfig.txt
+- - my_new_car.obj
+- - my_new_car.png
+- - my_new_car.ogg (optional, its engine sound)
+- - wheel.obj (optional, its wheel model)
+
+directory and model and texture have to have same name!
+only config, model and texture are required, otherwise the car will not render
+everything else will be ignored.
+engine sound is optional
+
+
+only supports:
+".obj" as 3d model  (blender export parameters at the end of file)
+".png" as texture
+".ogg" as engine sound
+
+
+TROUBLESHOOTING? 
+- if anything is wrong and model or texture load failed (it requires both), it will fallback to rendering just a rectangle without telling 
+
+
+Car config txt:
+comments defined with //
+everything else can by figured out from already existing configs
+note: car usually doesnt reach maxspeed by around 20 speed units
+all units are based on gamemaker pixels with no real world reference, so it requires manual tinkering
+
+if a config entry is not specified, default value is used
+Also some of these values are too small for deltarune, consider defining them all.
+
+// main handling 1
+wheelbase_x = 3.5 // number , in GameMaker pixels,  3.5 is extremely small
+wheelbase_y = 9 // number
+layout = 2 // int powertrain layout: fwd = 1, rwd = 2, awd = 3
+// main handling 2
+maxspeed = 225 // number
+reversemaxspeed = 27 // number
+acceleration = 5 // number
+brakestrength = 5 // number
+steerspeed = 20 
+tiretraction = 0.5
+// physics
+vehiclemass = 1.0 // affects car to car collsision response, heavier car and plow easier through light car
+// visuals
+electricengine = false // true/false 
+wheelscale = 1.0 // number
+maxleanangle = 12 // number (degrees)
+leanmultiplier = 1.4 
+renderwheels = false // true/false 
+wheelrimcolor1 = FF0000 // hex color, only when using default wheels
+wheelrimcolor2 = 0000FF // hex color, only when using default wheels
+renderfidelity = 1.0 // multiply the resolution, min 0.5, max 8.0  (aka 64px to 1024px  ( default 1.0 = 128px ))
+
+
+
+
+
+
+CAR CREATION CHECKLIST:
+txt
+obj
+png
+3d model bottom center of wheelbase is at 0,0,0
+length units are in PIXELS  (compare to original deltarune car sprites resolution for reference)
+max size 90 units on all axis (or the render will be cropped)
+
+and the black outline is rendered automatically - it just renders 1 more pixel around the car
+
+
+default wheels: 
+Wheels are 8 pixel radius  cylinders (16 pixels diameter) and 5.3 pixels wide
+wheels texture is only shader-based from two colors provided by wheel_color entries in car config
+wheels are placed at the ends of wheelbase (and in 3d vertical axis 0)
+
+
+
+BLENDER OBJ EXPORT PARAMETERS:
+Selection Only = On
+Forward Axis = -Y
+Up Axis = +Z
+UV Coords = On
+Normals = Off
+Colors = Off
+Triangulate = On
+Apply Modifiers = On
+-everything else default
+
+
+
+
+
+
+
+
+
+
+
+
+

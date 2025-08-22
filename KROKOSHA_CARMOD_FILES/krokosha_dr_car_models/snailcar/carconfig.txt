@@ -1,0 +1,23 @@
+//Snail Car
+
+maxspeed = 220
+reversemaxspeed = 95
+acceleration = 4
+brakestrength = 3
+steerspeed = 15
+tiretraction = 0.53
+
+wheelbase_x=27
+wheelbase_y=37
+
+// powertrain layout: fwd = 1, rwd = 2, awd = 3
+layout = 1
+
+
+//visual
+maxleanangle = 13
+leanmultiplier = 1.5
+renderwheels = true
+wheelrimcolor1 = 467173
+wheelrimcolor2 = C0ABAB
+

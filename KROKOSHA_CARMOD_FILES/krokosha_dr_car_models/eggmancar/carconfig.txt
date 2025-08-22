@@ -1,0 +1,25 @@
+//Egg Man's car (a.k.a. Gray car)
+
+maxspeed = 330
+reversemaxspeed = 120
+acceleration = 6.7
+brakestrength = 3.6
+steerspeed = 16
+tiretraction = 0.6
+
+wheelbase_x=27
+wheelbase_y=41
+
+wheelscale=0.9
+
+// powertrain layout: fwd = 1, rwd = 2, awd = 3
+layout = 2
+
+
+//visual
+maxleanangle = 13
+leanmultiplier = 1.0
+renderwheels = true
+wheelrimcolor1 = 3B4249
+wheelrimcolor2 = A2B1C6
+

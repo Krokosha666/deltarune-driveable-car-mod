@@ -1,0 +1,183 @@
+Made By Krokosha666
+
+An API brief
+
+Some quick code snippets to use this mod in your mods.
+
+Note: if you want to just add a car model, refer to "how to make cars.txt" in "krokosha_dr_car_models/" folder, its simple
+
+=============================================================================================================================================================================
+ == HOW TO SPAWN CAR WITH CODE
+=============================================================================================================================================================================
+
+// START OF SNIPPET
+
+// check if car manager exists (required)  ALWAYS REMEMBER THAT CAR MANAGER IS NOT SPAWNED IMMIDIETLY AS THE GAME SPAWNS, BUT YOU SHOULD FORCE IT TO SPAWN AS SOON AS YOU WANT
+if (!instance_exists(krokosha_car_manager))
+    instance_create_depth(0, 0, 4000, krokosha_car_manager);
+
+// (car spawns at the center of the xy coordinates)
+// arg0: x
+// arg1: y
+// arg2: car rotation (radians)
+// arg3: car id (same as the name from the folder with car assets)
+// arg4: unique spawner id, leave 0 to ignore, any different number is to avoid duplicates from the same spawner (like torielvan spawner id is 10) (so if a car with this unique spawner id already exists, this function will not create a car and return -1)
+var newspawnedcar = krokosha_car_manager.spawn_this_car_if_it_doesnt_exist(x, y, 0, "torielvan", 0);
+
+// enter the car smoothly right now (optional)
+if (newspawnedcar != -1 && !krokosha_car_manager.krokosha_player_is_in_car)
+    newspawnedcar.car_player_enter_smooth();
+    // newspawnedcar.car_player_enter_now(); // enter with no animation and no door sound
+
+// END OF SNIPPET
+
+
+
+
+// RELATED STUFF 
+krokosha_car_driveable (instance) .car_player_enter_smooth();  // plays car door sounds, and plays animation of entering the car
+krokosha_car_driveable (instance) .car_player_enter_now();  // teleports the player and party members in car, and starts the engine, driveable immidietly
+
+krokosha_car_driveable (instance) .car_player_dismount_smooth(); // make player leave car with proper exit animation, and sound
+krokosha_car_driveable (instance) .car_player_dismount(force_mainchara_visible (optional, boolean), partymembers_force_invisible (optional, boolean)); // makes player immidietly leave the car without animations
+
+krokosha_car_driveable (instance) .set_engine_running(boolean); // enable car engine sound, and make car able to accelerate (done automatically by "car_player_enter_now" and "car_player_dismount")
+
+krokosha_car_driveable (instance) .doors_locked // boolean, if true, player can't enter the car by interacting
+
+=============================================================================================================================================================================
+ == VEHICULAR MANSLAUGHTER
+=============================================================================================================================================================================
+
+To add your enemies (or any object instance you specify) to be able to get run over by a car:
+
+
+use this:
+krokosha_car_manager.add_vehicular_manslaughter_target (object_asset_name_string,  approve_existence_func,  hit_action_func )
+
+parameters:
+object_asset_name_string = asset name of object like "obj_chaseenemy", it will first check asset_get_index(), and then call  approve_existence_func()
+approve_existence_func = a custom function that will confirm that asset exists (like, check current chapter)   (default: function that always returns true)
+hit_action_func = a custom function, hit was detected, do additional checks and delete the target, create explosion, do whatever  (default: target explodes and is deleted)
+
+NOTE: Car will first need to reach 30 speed units before it starts to check for collision with targets
+
+
+// EXAMPLE SNIPPET:
+
+function check_plot_ch4(target_asset_name) {
+    return global.chapter == 4 && global.plot >= 300
+}
+
+// since the object is used by a cutscene, we don't want to delete it, just make it invisible
+function kill_sans(sans,car) {
+    // check if its visible and has any of these sans sprites, it should be sans by then
+    if (sans.visible && (sans.sprite_index == spr_sans_dance_loop || sans.sprite_index == spr_toriel_sans_dance_loop || sans.sprite_index == spr_sans_dance_loop_back)) {
+        audio_play_sound(snd_rudebuster_hit,1,false)
+        krokosha_car_manager.krokosha_create_explosion(
+            lerp(sans.bbox_left,sans.bbox_right,0.5),
+            lerp(sans.bbox_top,sans.bbox_bottom,0.5),
+            false);
+        sans.visible = false;
+    }
+}
+// most cutscene objects are an "obj_marker"
+krokosha_car_manager.add_vehicular_manslaughter_target("obj_marker", check_plot_ch4, kill_sans);
+
+// END OF SNIPPET
+
+////////////////////////////////////////////
+
+// EXAMPLE SNIPPET 2 :
+
+function check_ch2(enemy_name) {
+    return global.chapter == 2 
+}
+
+function kill_berdly(berdly,car) {
+    if ((berdly.sprite_index == spr_berdly_hurt_kneel_burnt || berdly.sprite_index == spr_berdly_hurt_kneel) ) {
+        krokosha_car_manager.lambda_vehicular_manslaughter_default_explode(berdly,car); // delete the berdly object
+    }
+}
+// most static interactable npcs are "obj_npc_sign"
+krokosha_car_manager.add_vehicular_manslaughter_target("obj_npc_sign", check_ch2, kill_berdly);
+
+// END OF SNIPPET 2
+
+
+
+
+=============================================================================================================================================================================
+ == OTHER CAR MANAGER STUFF
+=============================================================================================================================================================================
+
+krokosha_car_manager.car_ignore_interact_in_rooms  // array of room names where it should ignore global.interact flag (by default if player is in a car and interact is true, it assumes player is in cutscene and car explodes, so you can allow player to still drive while in this global.interact state )
+
+krokosha_car_manager.krokosha_car_mgr_reset_skidmark_surfaces(); // cleans up skid marks
+
+krokosha_car_manager.krokosha_create_explosion(x,y,do_sound (default true)); // create the spr_realisticexplosion with snd_badexplosion
+
+krokosha_car_manager.krokosha_player_current_car // current or last krokosha_car_driveable instance driven by player
+
+krokosha_car_manager.krokosha_despawn_all_cars();
+
+krokosha_car_manager.krokosha_dev_test_no_interact // a leftover constant, set to false so it doesnt explode the car in global.interact state, allowing to break the game even more
+
+
+// ALWAYS FIRST make sure the car manager exists before using it
+if (!instance_exists(krokosha_car_manager))
+    instance_create_depth(0, 0, 4000, krokosha_car_manager);
+
+
+=============================================================================================================================================================================
+ == OTHER CAR STUFF
+=============================================================================================================================================================================
+
+krokosha_car_driveable (instance) .car_airspeed // total velocity magnitude
+krokosha_car_driveable (instance) .car_speed // speed of car in current direction , aka longitudinal velocity
+krokosha_car_driveable (instance) .car_side_speed // lateral speed
+
+krokosha_car_driveable (instance) .angular_velocity
+krokosha_car_driveable (instance) .carangle // in radians, current car rotation
+
+
+krokosha_car_driveable (instance) .krokosha_get_corners() // get corner positions of the car (theyre used for collision detection) (returns an array with 8 reals [x,y,x,y,x,y,x,y] , corners are in this order: front left, front right, rear left, rear right )
+krokosha_car_driveable (instance) .krokosha_apply_impulse(impulseX, impulseY, pointX, pointY) // apply force
+
+
+=============================================================================================================================================================================
+ == OTHER STUFF
+=============================================================================================================================================================================
+
+global.krokosha_car_spawnmenu_active // boolean, set to true to open spawner menu
+global.krokosha_car_partymember_comments // boolean, enables your party members comment on your driving when you collide with a wall
+
+=============================================================================================================================================================================
+ DRIVING A CAR WITH CODE (when player is not driving it)
+=============================================================================================================================================================================
+
+"krokosha_car_driveable" instance has these:
+
+no_player_control_override_wishthrottle  (1 = forward, -1 = backward)
+no_player_control_override_wishsteer  (1 = right, -1 = left) // steering is not immediate
+steer // this is true steer (real wheel turn angle is done like this: (steer * realmaxsteerangle) )
+skidding // current loss of traction
+
+
+and also don't forget to manually call  set_engine_running(true) 
+
+
+
+
+=============================================================================================================================================================================
+ == SEPARATOR
+=============================================================================================================================================================================
+
+
+i am sorry my code is terrible, lacks convention or style, generally most dogshit code i ever wrote. but like my excuse is i didn't know that GML actually had some feature before i stuck to one style
+
+
+
+
+
+

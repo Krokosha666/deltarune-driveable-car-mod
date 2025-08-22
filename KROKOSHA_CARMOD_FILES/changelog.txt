@@ -1,0 +1,94 @@
+
+
+1.4: ==================================================================================================================================
+Added compatibility for mod manager "DELTAMod".
+Moved "krokosha_dr_car_models" back to the game mod folder, i completely misunderstood the GameMaker docs.
+Updated asgore truck look again, this is its final version.
+Added "renderfidelity" car config entry. (See "how to make cars.txt" for details)
+Made possible customizable wheel model.
+
+1.3: ==================================================================================================================================
+Improved Asgore truck Model for consistency and detail.
+Improved collision detection, lesser chance of clipping through walls.
+Vehicle to vehicle collision is greatly improved.
+Added burnout and rotate-on-the-spot to AWD and FWD cars.
+Added "vehiclemass" car config entry, only affects car to car collision response.
+After queen boss fight, kneeling berdly can be run over.
+Car door sound is a bit more randomized.
+Renamed important files to make more sense.
+
+1.2: ==================================================================================================================================
+Chapter 1: Finally implemented party members comments on collision. Thanks to McMistrzYT in DELTAModders discord for hints.
+Fixed BattleHeart not following Kris when driving.
+Removed unintended gear shift sound effect when reversing on faster cars.
+
+Improved API for easier external use.
+Added "README-help-for-devs-that-want-to-extend-this-mod.txt" for Modders who are interested in extending my mod.
+
+Updated all Readmes to be more informative and up to date.
+Rewritten some internal systems.
+Added "wheelscale" car config entry. only visual. Default is 1.0.
+Made autoinstaller.bat overwrite car models.
+
+   
+1.1: ==================================================================================================================================
+fixed sounds not loading, thats my skill issue
+
+1: ==================================================================================================================================
+release
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+i am 
+
+
+
+
+
+
+
+
+the original
+
+
+
+
+
+
+
+
+
+
+ryan gosling
+
+
+
+
+
+
+
+
+

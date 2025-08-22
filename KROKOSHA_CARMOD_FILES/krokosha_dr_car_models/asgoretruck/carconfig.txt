@@ -1,0 +1,26 @@
+//Asgore 1987 8th GENERATION FORD F-150  WITH  420 CID diesel V8 ENGINE AHHAAAHAHA,  help, my brainrot level is terminal
+maxspeed = 270
+reversemaxspeed = 100
+acceleration = 3.9
+brakestrength = 2.034
+steerspeed = 11
+tiretraction = 0.48
+vehiclemass = 1.2
+
+
+wheelbase_x=41
+wheelbase_y=47
+
+// powertrain layout: fwd = 1, rwd = 2, awd = 3
+layout = 3
+
+
+
+//visual
+maxleanangle = 16
+leanmultiplier = 1.5
+renderwheels = true
+wheelrimcolor1 = 2D6075
+wheelrimcolor2 = 5D8BBB
+
+

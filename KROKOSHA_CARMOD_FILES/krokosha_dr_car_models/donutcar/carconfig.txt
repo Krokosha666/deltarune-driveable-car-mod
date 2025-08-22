@@ -1,0 +1,23 @@
+//Donut Car
+
+maxspeed = 290
+reversemaxspeed = 102
+acceleration = 4
+brakestrength = 3
+steerspeed = 15
+tiretraction = 0.61
+
+wheelbase_x=27
+wheelbase_y=37
+
+// powertrain layout: fwd = 1, rwd = 2, awd = 3
+layout = 2
+
+
+//visual
+maxleanangle = 14
+leanmultiplier = 1.5
+renderwheels = true
+wheelrimcolor1 = 5F497A
+wheelrimcolor2 = C0ABAB
+

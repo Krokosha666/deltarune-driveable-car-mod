@@ -1,0 +1,126 @@
+Made by Krokosha666
+(my abandoned YT channel): https://www.youtube.com/@Krokosha666
+
+Title: 
+Delta Theft Auto (sorry, might be misleading)
+
+
+Description:
+
+MOST USELESS MOD EVER!
+This mod grants you the ability to drive most cars seen in the game with true car-like physics.
+No, this mod doesn't make literal GTA out of Deltarune, it only allows driving cars.
+
+ = Features:
+3D car models ... in a 2d game, yeah... 
+Your party members will enter the car with you.
+Your party members will comment on your driving. (but not in CH1)
+Actual tire skid marks.
+Car spawn menu + despawn button.
+All cars have unique parameters, like acceleration or handling.
+Running over (some) enemies in dark world. ( no consequences )
+Easy way to add your own car models. (more info in the README)
+
+ = Warnings:
+You may break or skip scripted sequences while driving.
+You can't enter cars while in a cutscene. (Sometimes cutscene allows you to move, just so you know.)
+You can't use cars in battle. (duh)
+It is hard to drive in tight spaces, you'll want to noclip sometimes. (The game is not made for cars.)
+If you want to complete entire game while driving, you will have to respawn cars and noclip alot.
+This mod is made for the Steam Paid version of Deltarune.
+
+ = Car list:
+Toriel Van 
+Asgore Truck 
+Queen Cyber Car 
+Egg Man's Car (the one that Undyne uses for bench presses)
+Snail Car (Light World NPC)
+Donut Car (Light World NPC)
+
+ = HOW TO DRIVE:
+Walk up to Toriels or any other car.
+Keep interacting until the dialogue runs out.
+Interact again to enter the car.
+Drive.
+
+ = Official car spawns list:
+All chapters:
+    Toriels van at Kris yard
+    Asgore truck at Flower shop
+Chapter 1 Lightworld:
+    Donut Car near Undyne
+    Snail Car near Undyne
+Chapter 2:
+    Before CyberWorld, Lightworld:
+        All the cars in the traffic jam.
+        multiple Egg Man cars (a.k.a. Gray Car)
+        Donut Car
+        Snail Car
+    After CyberWorld, Lightworld:
+        Donut Car near Ice-e's Pizza
+        Snail Car near Ice-e's Pizza
+Chapter 3: 
+    None
+Chapter 4 Lightworld: 
+    Snail Car near police station
+Or just spawn any car manually. 
+
+ = CONTROLS:
+ENTER/LEAVE VEHICLE: Z or ENTER  
+DRIVE: Up,Down,Left,Right
+HANDBRAKE: X or SHIFT  
+HONK: H
+
+CAR SPAWN MENU: K + R
+CAR NOCLIP: T (hold)
+CAR SHOW DEV GIZMOS: Y (hold)
+
+
+
+===========================================================================================================
+Gamebanana dev notes:
+===========================================================================================================
+
+
+I actually made this mod back in June after the Asgore memes started popping up. 
+Then i paused cuz didn't feel like creating more models and testing the entire game.
+I had trouble picking a name for this mod so i just went with GTA. 
+I do not want to mention asgore driving his truck.
+
+Known issues and bugs:
+You can skip and break out of scripted sequences and cutscenes, that may result in a game crash.
+ - Sometimes the car will explode to avoid this.
+Collision physics are simple and sometimes you can end up out of bounds or stuck. 
+ - Just avoid ramming stuff while drifting. To recover hold "T" for noclip.
+Car to Car collision physics are terrible and glitchy.  
+ - Avoid ramming other cars.
+Rarely Kris can get stuck in a wall when exiting a car. (in dark world)
+ - Don't park too close to walls.
+Sometimes empty cars disappear when re-entering the room. (or not? i forgor)
+
+I didn't test the entire game properly, playthrough takes too long.
+Honestly, the code is so bad that i thought i would never release this.
+And im kinda tired after working on this, don't expect updates, maybe only when more chapters release.
+
+This is my first experience using GameMaker and modding Deltarune. Please report any game crash caused by this mod. 
+
+Tested on version:
+ch1: 1.40
+ch2: 1.46
+ch3: v0.0.098
+ch4: v0.0.098
+
+
+
+This is my first experience using GameMaker and modding Deltarune. Please report any game crash caused by this mod. 
+
+
+
+
+
+
+
+
+
+
+

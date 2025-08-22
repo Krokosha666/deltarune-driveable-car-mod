@@ -1,0 +1,22 @@
+//Queen city car
+maxspeed = 300
+reversemaxspeed = 180
+acceleration = 8.7
+brakestrength = 4.3
+steerspeed = 19
+tiretraction = 0.55
+vehiclemass = 1.1
+
+wheelbase_x=32
+wheelbase_y=47
+
+// powertrain layout: fwd = 1, rwd = 2, awd = 3
+layout = 3
+
+
+//visual
+maxleanangle = 8
+leanmultiplier = 1
+renderwheels=false
+// electricengine only removes gear shifting sound effect
+electricengine = true
