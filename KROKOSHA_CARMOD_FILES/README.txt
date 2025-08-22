@@ -36,10 +36,11 @@ Short description:
 Full description is in DESCRIPTION.txt
 
 
-For Modders: If you want to use my mod as dependency in your mods, read: "README-help-for-devs-that-want-to-extend-this-mod.txt"
+For Modders: If you want to use my mod as dependency in your mods, read: "API-for-modders.txt"
 
 
 Please excuse my grammar, English is not my first and not even my second language.
+
 
 
 
