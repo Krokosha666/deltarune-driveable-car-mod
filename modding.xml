@@ -1,0 +1,57 @@
+<patch type="xdelta" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_xdelta_patches/ch1.xdelta" to="./chapter1_windows/data.win" />
+<patch type="xdelta" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_xdelta_patches/ch2.xdelta" to="./chapter2_windows/data.win" />
+<patch type="xdelta" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_xdelta_patches/ch3.xdelta" to="./chapter3_windows/data.win" />
+<patch type="xdelta" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_xdelta_patches/ch4.xdelta" to="./chapter4_windows/data.win" />
+
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/API-for-modders.txt" to="./KROKOSHA_CARMOD_FILES/API-for-modders.txt" />
+
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/krokosha_snd_car_door_sound.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/krokosha_snd_car_door_sound.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/krokosha_snd_car_engine_loop.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/krokosha_snd_car_engine_loop.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/krokosha_snd_car_screech_loop.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/krokosha_snd_car_screech_loop.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/snd_fall.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_car_mod_sounds/snd_fall.ogg" />
+
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/how to make cars.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/how to make cars.txt" />
+
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/asgoretruck.obj" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/asgoretruck.obj" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/asgoretruck.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/asgoretruck.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/asgoretruck.png" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/asgoretruck.png" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/carconfig.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/asgoretruck/carconfig.txt" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/carconfig.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/carconfig.txt" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/donutcar.obj" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/donutcar.obj" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/donutcar.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/donutcar.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/donutcar.png" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/donutcar/donutcar.png" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/carconfig.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/carconfig.txt" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/eggmancar.obj" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/eggmancar.obj" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/eggmancar.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/eggmancar.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/eggmancar.png" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/eggmancar/eggmancar.png" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/carconfig.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/carconfig.txt" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/queencar.obj" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/queencar.obj" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/queencar.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/queencar.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/queencar.png" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/queencar/queencar.png" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/carconfig.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/carconfig.txt" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/snailcar.obj" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/snailcar.obj" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/snailcar.ogg" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/snailcar.ogg" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/snailcar.png" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/snailcar/snailcar.png" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/torielvan/carconfig.txt" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/torielvan/carconfig.txt" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/torielvan/torielvan.obj" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/torielvan/torielvan.obj" />
+<patch type="override" patch="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/torielvan/torielvan.png" to="./KROKOSHA_CARMOD_FILES/krokosha_dr_car_models/torielvan/torielvan.png" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

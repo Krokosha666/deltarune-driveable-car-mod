@@ -1,0 +1,15 @@
+{
+    "metadata": {
+        "name": "Delta Theft Auto",
+        "version": "1.3.0",
+        "description": "Driveable cars in Deltarune.\nThis is not a real GTA.\n\n = Features:\n 3D Car models\n Actual tire skid marks.\n Vehicular Manslaughter!!!\n Add more models easily.\n = Warnings:\n You can't use cars in battle. (duh)\n You may break or skip scripted sequences while driving.\n\n = Car list:\n Toriel Van\n Asgore Truck \n Queen Cyber Car \n Egg Man's Car (the one that Undyne uses for bench presses)\n Snail Car (Light World NPC)\n Donut Car (Light World NPC)\n\n = CONTROLS:\nENTER/LEAVE VEHICLE: Z or ENTER  \nDRIVE: Up,Down,Left,Right\nHANDBRAKE: X or SHIFT  \nHONK: H\n\nCAR SPAWN MENU: K + R\nCAR NOCLIP: T (hold)\nCAR SHOW DEV GIZMOS: Y (hold)\n",
+        "author": ["Krokosha"],
+        "demoMod": false
+    },
+    "neededFiles": [
+        {
+            "file": "data.win",
+            "checksum": "e1e2c38d250fba7f5387abb773bf2716b5783708b93634c4c1b162f1f1790361"
+        }
+    ]
+}
